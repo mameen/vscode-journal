@@ -133,6 +133,11 @@ export class Startup {
                         commands.runTestFeature()
                             .catch(error => commands.showError(error))
                             .done();
+                    }),
+                    vscode.commands.registerCommand('journal.refill', () => {
+                        commands.refill()
+                            .catch(error => commands.showError(error))
+                            .done();
                     })
                     /* vscode.commands.registerCommand('journal.config', () => {
                          _commands.editJournalConfiguration();

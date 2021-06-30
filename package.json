@@ -37,15 +37,16 @@
   "activationEvents": [
     "onCommand:journal.day",
     "onCommand:journal.entry",
-    "onCommand:journal.today",
-    "onCommand:journal.yesterday",
-    "onCommand:journal.tomorrow",
-    "onCommand:journal.note",
     "onCommand:journal.memo",
+    "onCommand:journal.note",
     "onCommand:journal.open",
     "onCommand:journal.printDuration",
-    "onCommand:journal.printTime",
     "onCommand:journal.printSum",
+    "onCommand:journal.printTime",
+    "onCommand:journal.refill",
+    "onCommand:journal.today",
+    "onCommand:journal.tomorrow",
+    "onCommand:journal.yesterday",
     "onCommand:journal.test"
   ],
   "main": "./dist/extension.js",
@@ -75,6 +76,11 @@
       {
         "command": "journal.memo",
         "title": "Enter Quick Memo",
+        "category": "Journal"
+      },
+      {
+        "command": "journal.refill",
+        "title": "Refill Journal",
         "category": "Journal"
       },
       {

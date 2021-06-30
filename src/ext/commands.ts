@@ -399,6 +399,14 @@ export class JournalCommands implements Commands {
         return deferred.promise;
     } */
 
+    public refill(): Q.Promise<string> {
+        this.ctrl.logger.trace("Refill the journal");
+
+        return Q.Promise((resolve, reject) => {
+            resolve("sucess"); 
+        }); 
+    }
+
 
     public showError(error: string | Q.Promise<string> | Error): void {
 
